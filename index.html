@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microplastic Checker - Test0.1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Microplastic Checker</h1>
+    <p>Hi Nana, Hi Buch, Hi ester, Hi Dalynn, Hi Heng, Hi Pai, Hi 3/5! Check if a snack or everyday item contains plastic, learn the risks, and find better alternatives.</p>
+    <div class="stats-bar">
+      <span class="stat">Facts 1</span>
+      <span class="stat">Facts 2</span>
+      <span class="stat">Facts 3</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="input-section">
+      <label for="item-input">What snack or item do you want to check?</label>
+      <input
+        type="text"
+        id="item-input"
+        placeholder="Chewing gum, Potato chips, Fresh apple, Instant ramen, Microwave popcorn, and Banana, Only"
+        autocomplete="off"
+      >
+
+      <label for="image-input">Upload an image (optional)</label>
+      <input type="file" id="image-input" accept="image/*">
+      <p class="hint">Image matching uses the filename (e.g. "plastic_water_bottle.jpg"). Type the item name for best results.</p>
+
+      <div id="image-preview" hidden>
+        <img id="preview-img" alt="Uploaded item preview">
+      </div>
+
+      <div class="button-row">
+        <button type="button" id="analyze-btn">Analyze Item</button>
+        <button type="button" id="clear-btn">Clear</button>
+      </div>
+
+      <div class="suggestions">
+        <p>Try these examples:</p>
+        <div id="suggestions"></div>
+      </div>
+    </section>
+
+    <section id="results" hidden>
+      <div id="results-content"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>EXPANSE38 - HTML, CSS, JAVASCRIPT - Love 3/5</p>
+  </footer>
+
+  <script src="data/template.js"></script>
+  <script src="data/potato-chips.js"></script>
+  <script src="data/snack-templates.js"></script>
+  <script src="data/plastic-item-templates.js"></script>
+  <script src="data/constants.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
